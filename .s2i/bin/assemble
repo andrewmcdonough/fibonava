@@ -6,7 +6,7 @@ env
 
 
 echo "ASSEMBLING"
-
+sleep 1000
 
 echo "Working dir:"
 pwd
