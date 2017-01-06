@@ -7,6 +7,16 @@ echo "ASSEMBLING"
 echo "Copying source..."
 cp -Rf /tmp/src/. ./
 
+echo "Working dir:"
+pwd
+
+find *
+
+echo "tmp" 
+find /tmp
+
+
+
 echo "Compiling..."
 mvn clean install
 
