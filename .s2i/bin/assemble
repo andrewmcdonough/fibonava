@@ -4,8 +4,6 @@ set -e
 
 echo "ASSEMBLING"
 
-echo "Copying source..."
-cp -Rf /tmp/src/. ./
 
 echo "Working dir:"
 pwd
@@ -16,6 +14,8 @@ echo "tmp"
 find /tmp
 
 
+echo "Copying source..."
+cp -Rf /tmp/src/. ./
 
 echo "Compiling..."
 mvn clean install
