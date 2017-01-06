@@ -2,6 +2,9 @@
 
 set -e
 
+env
+
+
 echo "ASSEMBLING"
 
 
