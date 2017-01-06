@@ -3,3 +3,11 @@
 set -e
 
 echo "ASSEMBLING"
+
+echo "Copying source..."
+cp -Rf /tmp/src/. ./
+
+echo "Compiling..."
+mvn clean install
+
+fix-permissions ./
