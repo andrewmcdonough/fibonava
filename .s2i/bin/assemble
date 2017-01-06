@@ -2,25 +2,11 @@
 
 set -e
 
-env
+echo "Copying"
+cp -R  /opt/s2i/destination/src .
 
+echo "Building"
+cd src
+./gradlew build
 
-echo "ASSEMBLING"
-sleep 1000
-
-echo "Working dir:"
-pwd
-
-find .
-
-echo "tmp" 
-find /tmp
-
-
-echo "Copying source..."
-cp -Rf /tmp/src/. ./
-
-echo "Compiling..."
-mvn clean install
-
-fix-permissions ./
+#fix-permissions ./
