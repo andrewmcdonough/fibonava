@@ -8,7 +8,7 @@ echo "ASSEMBLING"
 echo "Working dir:"
 pwd
 
-find *
+find .
 
 echo "tmp" 
 find /tmp
